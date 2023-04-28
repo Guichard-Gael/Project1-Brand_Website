@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Mangas Shop Ancenis</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img class="logo" src="../assets/images/logo.png" alt="Brand Logo"></a>
+        <nav>
+            <ul class="nav-ul-element">
+                <li><a href="./about_us.html">About Us</a></li>
+
+                <li class="nav-dropdown-menu">Manga Universe
+                    <ul>
+                        <li><a href="./figurine.html">Figurines</a></li>
+                        <li><a href="./mangas.html">Mangas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown-menu">
+                    Communication
+                    <ul>
+                        <li><a href="./events.html">Events</a></li>
+                        <li><a href="./news.html">News</a></li>
+                    </ul>
+                </li>
+                <li><a href="./photo_gallery.html">Photo gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home-main">
+
+        <h1>Contact us</h1>
+
+        <form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST">
+            <input class="yourclass" id="lastname" type="text" name="lastname" placeholder="Your last name" />
+            <input class="yourclass" id="firstname" type="text" name="firstname" placeholder="Your first name" />
+            <input class="yourclass" id="mail" type="email" name="email" placeholder="Your e-mail" />
+            <textarea class="yourclass" name="request" id="request" cols="66" rows="10"
+                placeholder="Write your message"></textarea>
+            <select class="yourclass" name="country" id="country" placeholder="Select your country">
+                <option value="">Select your country</option>
+                <option value="england">England</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="italy">Italy</option>
+                <option value="portugal">Portugal</option>
+                <option value="spain">Spain</option>
+                <option value="usa">USA</option>
+
+            </select>
+            <button>Submit</button>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy copyright 2023</p>
+    </footer>
+</body>
+
+</html>
