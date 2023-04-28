@@ -28,6 +28,11 @@ p {
     padding: 1rem;
 }
 
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 
 /*===================
        Header
@@ -51,11 +56,6 @@ nav ul li {
     list-style-type: none;
     padding: 1rem;
     font-size: 0.8rem;
-}
-
-nav ul a {
-    text-decoration: none;
-    color: var(--primary-color);
 }
 
 .nav-ul-element {
@@ -106,6 +106,13 @@ main {
     transform: translate(-50%, -70%);
     width: 100%;
     font-size: 1rem;
+}
+
+/*===================
+ Legal informations
+===================*/
+.legal-informations {
+    text-align: justify;
 }
 
 /*===================
@@ -171,12 +178,27 @@ main {
 }
 
 .card p {
-    text-align: left;
+    text-align: justify;
     font-size: 0.7rem;
 }
 
 .card img {
     width: 100%;
+}
+
+/*===================
+     Photo gallery
+===================*/
+.photo-gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.photo-gallery img {
+    width: 95%;
 }
 
 /*===================
@@ -285,6 +307,11 @@ form button:hover {
     .shelves-mangas-img {
         width: 60%;
     }
+
+    /** Photo gallery **/
+    .photo-gallery img {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 650px) {
@@ -316,6 +343,11 @@ form button:hover {
     
     .card p {
         font-size: 1rem;
+    }
+
+    /** Photo gallery **/
+    .photo-gallery img {
+        width: 70%;
     }
 }
 
@@ -350,6 +382,11 @@ form button:hover {
     /** Mangas **/
     .shelves-mangas-img {
         width: 50%;
+    }
+
+    /** Photo gallery **/
+    .photo-gallery img {
+        width: 45%;
     }
 }
 
